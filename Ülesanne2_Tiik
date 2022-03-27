@@ -1,0 +1,30 @@
+import pygame #importib faili pygame-i
+pygame.init() #käivitab pygamei
+screen=pygame.display.set_mode([640, 480]) # tekitab akna suurusega 640x480
+pygame.display.set_caption("Ülesanne 2") # kuvab ekraani nime
+
+bg = pygame.image.load("bg_shop.webp") # laadib lahti taustapildi
+screen.blit(bg,[0,0]) # määrab ära pildi asukoha, antud juhul terve ekraan
+
+seller = pygame.image.load("seller.webp") # laadib lahti müüja pildi
+seller = pygame.transform.scale(seller, [260, 310]) # muudab pildi mõõtmeid, et pilt mahuks ilusti ekraanile
+screen.blit(seller,[105,157]) # määrab ära pildi asukoha
+
+chat = pygame.image.load("chat.webp") #laadib lahti chati pildi
+chat = pygame.transform.scale(chat, [254, 205]) # muudab pildi mõõtmeid, et pilt mahuks ilusti ekraanile
+screen.blit(chat, [248,66]) # määrab ära pildi asukoha
+
+font = pygame.font.Font(pygame.font.match_font('arial'), 30) # määrab ära teksti fondi ja kirja suuruse
+text = font.render("Karlos-Rein Tiik", True, [255, 255, 255]) # lisab valget värvi teksti
+text_width = text.get_rect().width # tekstikasti laius
+text_height = text.get_rect().height # tekstikasti kõrgus
+screen.blit(text, [370-text_width/2, 150-text_height/2]) # määrab ära teksti asukoha
+
+pygame.display.flip() # värskendab ekraani
+
+from sys import exit #impordib sys-ist pygamei exit-i
+while True: # alustab while tsükklit
+        for event in pygame.event.get(): # registreerib kõik kasutaja sündmused
+            if event.type == pygame.QUIT: # seab paika tingumuse et kui kasutaja sündmus on võrdeline pygamei sulgemisega, siis
+                pygame.quit() # suleb pygame-i akna
+                exit() # lõpetab tsükli
