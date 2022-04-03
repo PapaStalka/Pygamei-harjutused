@@ -1,5 +1,4 @@
 import pygame #importib faili pygame-i
-#
 pygame.init() #käivitab pygamei
 red = [255, 0, 0] # punase värvi rgb kood
 green = [153, 255, 153] # helerohelise värvi rgb kood
