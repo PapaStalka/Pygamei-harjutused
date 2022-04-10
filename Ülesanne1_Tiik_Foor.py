@@ -1,5 +1,5 @@
 import pygame  #importib faili pygame-i
-#GitHUBi link https://github.com/PapaStalka/Pygamei-harjutused/blob/2a79116743b53c302345f1ee8681d868076a6259/%C3%9Clesanne1_Tiik
+
 
 #Foor
 pygame.init() #käivitab pygamei
