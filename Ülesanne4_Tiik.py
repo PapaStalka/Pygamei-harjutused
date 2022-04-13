@@ -1,4 +1,4 @@
-import pygame, sys, random   #pygame, sys ja random importimine faili
+import pygame, random   #pygame ja random importimine faili
 pygame.init()  #pygame käivitamine
 
 
