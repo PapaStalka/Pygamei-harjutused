@@ -1,5 +1,4 @@
 import pygame # pygame importimine faili
-#GitHUBi link : https://github.com/PapaStalka/Pygamei-harjutused/blob/6c353163e4c373d48354c74ddab7e75350f57eb4/%C3%9Clesanne5_Tiik.py
 pygame.init() # pygame käivitamine
 
 screenX = 640 # Akna pikkus.
